@@ -10,13 +10,51 @@
     {
       "title": "Star Wars: A New Hope",
       "rating": "5",
-<<<<<<< HEAD
+      "description": "movie description",
+      "genre": "Movie Genre",
+      "id": 2
+    },
+    {
+      "title": "Star Wars: A New Hope",
+      "rating": "5",
       "description": "movie description",
       "genre": "Movie Genre",
       "id": 3
-=======
-      "id": 2
->>>>>>> 8606861063b8dadcf7144df835528c68827f226a
+    },
+    {
+      "title": "Star Wars: A New Hope",
+      "rating": "5",
+      "description": "movie description",
+      "genre": "Movie Genre",
+      "id": 4
+    },
+    {
+      "title": "Star Wars: A New Hope",
+      "rating": "5",
+      "description": "movie description",
+      "genre": "Movie Genre",
+      "id": 5
+    },
+    {
+      "title": "Star Wars: A New Hope",
+      "rating": "5",
+      "description": "movie description",
+      "genre": "Movie Genre",
+      "id": 6
+    },
+    {
+      "title": "Star Wars: A New Hope",
+      "rating": "5",
+      "description": "movie description",
+      "genre": "Movie Genre",
+      "id": 7
+    },
+    {
+      "title": "Star Wars: A New Hope",
+      "rating": "5",
+      "description": "movie description",
+      "genre": "Movie Genre",
+      "id": 8
     }
   ]
 }
