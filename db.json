@@ -15,46 +15,22 @@
       "id": 2
     },
     {
-      "title": "Star Wars: A New Hope",
-      "rating": "5",
-      "description": "movie description",
-      "genre": "Movie Genre",
       "id": 3
     },
     {
-      "title": "Star Wars: A New Hope",
-      "rating": "5",
-      "description": "movie description",
-      "genre": "Movie Genre",
+      "title": "Harlem Nights",
       "id": 4
     },
     {
-      "title": "Star Wars: A New Hope",
-      "rating": "5",
-      "description": "movie description",
-      "genre": "Movie Genre",
+      "title": "Hoodlum",
+      "rating": "Drama",
       "id": 5
     },
     {
-      "title": "Star Wars: A New Hope",
-      "rating": "5",
-      "description": "movie description",
-      "genre": "Movie Genre",
+      "title": "Enter the Dragon",
+      "description": "action",
+      "rating": "Action/Adventure",
       "id": 6
-    },
-    {
-      "title": "Star Wars: A New Hope",
-      "rating": "5",
-      "description": "movie description",
-      "genre": "Movie Genre",
-      "id": 7
-    },
-    {
-      "title": "Star Wars: A New Hope",
-      "rating": "5",
-      "description": "movie description",
-      "genre": "Movie Genre",
-      "id": 8
     }
   ]
 }
