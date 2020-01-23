@@ -8,6 +8,9 @@ html, body {
     transform: translateY(-100%);
     text-align: center;
 }
+.products {
+text-align: center;
+}
 /*styling for page loader*/
 .loader {
     border-radius: 50%;
