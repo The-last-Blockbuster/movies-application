@@ -44,11 +44,20 @@ text-align: center;
         opacity: 0
     }
     to {
-        bottom: 0px;
+        bottom: 0;
         opacity: 1
     }
 }
 
 .load-title,.load-p{
     font-family: 'Bangers', cursive;
+}
+
+#extra-controls {
+    display: none
+}
+
+div.hidden
+{
+    display: none
 }

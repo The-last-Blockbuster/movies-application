@@ -13,24 +13,6 @@
       "description": "movie description",
       "genre": "Movie Genre",
       "id": 2
-    },
-    {
-      "id": 3
-    },
-    {
-      "title": "Harlem Nights",
-      "id": 4
-    },
-    {
-      "title": "Hoodlum",
-      "rating": "Drama",
-      "id": 5
-    },
-    {
-      "title": "Enter the Dragon",
-      "description": "action",
-      "rating": "Action/Adventure",
-      "id": 6
     }
   ]
 }

@@ -19,64 +19,73 @@
         <h1 class="load-title">Hello There!</h1>
         <p class="load-p">Please wait while your page loads!</p>
     </div>
-<div>
-    <table id="products" class="table table-bordered table-striped text-center">
-        <thead>
-        <tr>
-            <th>Title</th>
-            <th>Rating</th>
-            <th>Description</th>
-            <th>Genre</th>
-        </tr>
-        </thead>
-        <tbody id="insertProducts"></tbody>
-    </table>
-<!--    form for adding movies -->
-<div class="add-movies">
-    <form>
-        <div class="form-group">
-            <label for="input">Enter Movie Title</label>
-            <input type="input" class="form-control" id="movie-title" placeholder="Title">
-        </div>
-        <div class="form-group">
-            <label for="input">Enter Movie Description</label>
-            <input type="input" class="form-control" id="movie-description" aria-describedby="emailHelp" placeholder="Description">
-        </div>
-    </form>
-    <select class="form-control" id="select" placeholder ="Select Genre">
-        <option>Enter Genre </option>
-        <option>Action/Adventure</option>
-        <option>Comedy</option>
-        <option>Drama</option>
-        <option>Romance</option>
-        <option>Horror</option>
-        <option>Documentary</option>
-        <option>indie</option>
-    </select>
-    <div id="movie-rating" class="row">Movie Rating
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">1</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">2</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option3">
-            <label class="form-check-label" for="inlineRadio2">3</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option4">
-            <label class="form-check-label" for="inlineRadio2">4</label>
-        </div>
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option5">
-            <label class="form-check-label" for="inlineRadio3">5</label>
-        </div>
+
+<div id="extraControls" class="hidden">
+        <table id="products" class="table table-bordered table-striped text-center">
+            <thead>
+            <tr>
+                <th>Title</th>
+                <th>Rating</th>
+                <th>Description</th>
+                <th>Genre</th>
+            </tr>
+            </thead>
+            <tbody id="insertProducts"></tbody>
+        </table>
+    <!--    form for adding movies -->
+    <div class="add-movies-container" id ="add-movie">
+            <form>
+                <div class="form-group">
+                    <label for="input">Enter Movie Title</label>
+                    <input type="input" class="form-control" id="movie-title" placeholder="Title">
+                </div>
+                <div class="form-group">
+                    <label for="input">Enter Movie Description</label>
+                    <input type="input" class="form-control" id="movie-description" aria-describedby="emailHelp" placeholder="Description">
+                </div>
+            </form>
+            <select class="form-control" id="select" placeholder ="Select Genre">
+                <option>Enter Genre </option>
+                <option>Action/Adventure</option>
+                <option>Comedy</option>
+                <option>Drama</option>
+                <option>Romance</option>
+                <option>Horror</option>
+                <option>Documentary</option>
+                <option>indie</option>
+            </select>
+            <div id="movie-rating" class=" col-4 row">Movie Rating
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option3">
+                    <label class="form-check-label" for="inlineRadio2">3</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option4">
+                    <label class="form-check-label" for="inlineRadio2">4</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option5">
+                    <label class="form-check-label" for="inlineRadio3">5</label>
+                </div>
+            </div>
+        <button id="refresh">Add Movie</button>
     </div>
-    <button id="refresh">Add Movie</button>
 </div>
+
+<div class="form-group">
+    <label for="input">Enter Movie Id</label>
+    <input type="input" class="form-control" id="delete1" placeholder="Id">
+    <button id="delete">Delete Movie</button>
+</div>
+
 
 <!--<code>src/index.js</code>-->
 
