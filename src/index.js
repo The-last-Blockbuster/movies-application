@@ -14,15 +14,21 @@ sayHello('World');
 
 //functionality for the loading pane//
 $(document).ready(function () {
-  $("#extraControls").hide(8000).show();
-  $('#products').hide().show();
-  $('#refresh').hide().show();
+  $("extraControls");
+setTimeout(function () {
+  x.value = "4 seconds"
+}, 1000);
 });
 
-let loader1 = $('.container').hide().show(3000).hide(3000);
-let loader2 = $('.center').hide().show(3000).hide(3000);
 
-const {getMovies, createMovie, deleteMovie} = require('./api.js');
+//   $("#extraControls").hide(8000).show();
+//   $('#products').hide().show();
+//   $('#refresh').hide().show();
+//   let loader1 = $('.container').hide().show(3000).hide(3000);
+//   let loader2 = $('.center').hide().show(3000).hide(3000);
+
+
+const {getMovies, createMovie, deleteMovie, editMovie} = require('./api.js');
 getMovies().then((movies) => {
   console.log('Here are all the movies:');
   // $('#products').hide().show();
@@ -59,6 +65,12 @@ getMovies().then((movies) => {
     console.log(deletion);
     deleteMovie(deletion);
   });
+
+$('#edit').click(function () {
+  let editing = $('#edit1').val();
+  console.log(editing);
+  editMovie(editing);
+});
 
 
 
