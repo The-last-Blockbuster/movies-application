@@ -14,18 +14,14 @@ sayHello('World');
 
 //functionality for the loading pane//
 $(document).ready(function () {
-  $("extraControls");
-setTimeout(function () {
-  x.value = "4 seconds"
-}, 1000);
+  $("#extraControls").hide().animate({height: "300px"}).show(12000);
+  // $('#products').stop().animate({height: "300px"}).show();
+  $('#refresh').hide().show();
 });
 
+let loader1 = $('.loader').show(4000).show(2000).hide(4000);
+let loader2 = $('.loader2').show(4000).show(2000).hide(4000);
 
-//   $("#extraControls").hide(8000).show();
-//   $('#products').hide().show();
-//   $('#refresh').hide().show();
-//   let loader1 = $('.container').hide().show(3000).hide(3000);
-//   let loader2 = $('.center').hide().show(3000).hide(3000);
 
 
 const {getMovies, createMovie, deleteMovie, editMovie} = require('./api.js');
@@ -47,9 +43,10 @@ getMovies().then((movies) => {
 //add movie functioning//
 
     $('#refresh').click(function () {
+      location.reload();
       let movieTitle = $('#movie-title').val();
       console.log(movieTitle);
-      let rating = $('#movie-rating').val();
+      let rating = $('.rating').val();
       console.log(rating);
       let movieDescription = $('#movie-description').val();
       console.log(movieDescription);
@@ -61,18 +58,24 @@ getMovies().then((movies) => {
 //delete movie//
 
   $('#delete').click(function () {
-    let deletion = $('#delete1').val();
+    location.reload();
+    let deletion = $('#id-number').click();
     console.log(deletion);
     deleteMovie(deletion);
   });
 
-$('#edit').click(function () {
-  let editing = $('#edit1').val();
-  console.log(editing);
-  editMovie(editing);
+//edit movie//
+
+
+
+  $('#edit').click(function () {
+    location.reload();
+  let edit2 = $('#id-number').val();
+  console.log(edit2);
+    let rating = $('.rating').val();
+    console.log(rating);
+    editMovie(edit2,rating);
 });
-
-
 
 
 

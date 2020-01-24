@@ -1,10 +1,33 @@
+
+.jumbotron{
+    background-image: url("img/cinema.jpg");
+    background-size: 100%;
+    background-position: center;
+    height: 50%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
 html, body {
     height: 100%;
+    background-color: darkgray;
+    font-family: 'Bangers', cursive;
+}
+
+
+.table{
+    width: 90%;
+    margin-left: 50px;
 }
 .center{
     z-index: 10;
 }
-
+.display-4{
+    margin-top: 20%;
+    font-family: 'Bangers', cursive;
+    color: whitesmoke;
+    font-size: 100px;
+}
 .container {
     position: relative;
     top: 50%;
@@ -26,9 +49,9 @@ text-align: center;
     left: 50%;
     top: 50%;
     z-index: 1;
-    width: 160px;
-    height: 160px;
-    margin: -300px 0 0 -100px;
+    width: 800px;
+    height: 800px;
+    margin: -200px 0 0 -400px;
     border-top: 16px solid #3498db;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
@@ -49,8 +72,10 @@ text-align: center;
     }
 }
 
-.load-title,.load-p{
+.load-title,#load-p{
     font-family: 'Bangers', cursive;
+    object-position: center;
+    text-align: center;
 }
 
 /*#extra-controls {*/
